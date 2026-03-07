@@ -68,11 +68,41 @@ const Effects = () => {
 
   return (
     <div className='flex flex-col gap-6'>
+      <CollapsibleSection
+        title='Sound Effects'
+        icon={<Volume2 size={18} />}
+        level='subsection'
+        defaultOpen={true}
+        storageKey='prefs-effects-click-sounds'
+      >
+        <fieldset className='grid grid-cols-2 gap-3 p-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+          {CLICK_SOUND_OPTIONS.map(option => {
+            const isSelected = clickSoundId === option.id;
+            return (
+              <ActionButton
+                key={option.id}
+                colorScheme={isSelected ? 'main' : 'secondary'}
+                borderColorScheme={isSelected ? 'main' : 'secondary'}
+                borderBottomThickness={16}
+                borderRadius='3xl'
+                className={`px-3 py-4 text-(--background-color) ${!isSelected ? 'opacity-50' : ''}`}
+                onClick={() => {
+                  setClickSoundId(option.id);
+                  playClickById(option.id);
+                }}
+              >
+                {option.label.toLowerCase()}
+              </ActionButton>
+            );
+          })}
+        </fieldset>
+      </CollapsibleSection>
+
       {hasFinePointer && (
         <CollapsibleSection
           title='Cursor Trail'
           icon={<MousePointer2 size={18} />}
-          level='subsubsection'
+          level='subsection'
           defaultOpen={true}
           storageKey='prefs-effects-cursor'
         >
@@ -94,7 +124,7 @@ const Effects = () => {
       <CollapsibleSection
         title='Click Effects'
         icon={<Zap size={18} />}
-        level='subsubsection'
+        level='subsection'
         defaultOpen={true}
         storageKey='prefs-effects-click'
       >
@@ -109,36 +139,6 @@ const Effects = () => {
               group='click'
             />
           ))}
-        </fieldset>
-      </CollapsibleSection>
-
-      <CollapsibleSection
-        title='Click Sounds'
-        icon={<Volume2 size={18} />}
-        level='subsubsection'
-        defaultOpen={true}
-        storageKey='prefs-effects-click-sounds'
-      >
-        <fieldset className='grid grid-cols-2 gap-3 p-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
-          {CLICK_SOUND_OPTIONS.map(option => {
-            const isSelected = clickSoundId === option.id;
-            return (
-              <ActionButton
-                key={option.id}
-                colorScheme={isSelected ? 'main' : 'secondary'}
-                borderColorScheme={isSelected ? 'main' : 'secondary'}
-                borderBottomThickness={16}
-                borderRadius='3xl'
-                className={`px-3 py-4  text-(--background-color) ${!isSelected ? 'opacity-50' : ''}`}
-                onClick={() => {
-                  setClickSoundId(option.id);
-                  playClickById(option.id);
-                }}
-              >
-                {option.label.toLowerCase()}
-              </ActionButton>
-            );
-          })}
         </fieldset>
       </CollapsibleSection>
     </div>

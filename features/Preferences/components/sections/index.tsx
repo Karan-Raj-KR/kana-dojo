@@ -64,18 +64,19 @@ const Settings = () => {
           >
             <Fonts />
           </CollapsibleSection>
-
-          {/* Effects Subsection */}
-          <CollapsibleSection
-            title='Effects'
-            icon={<Wand2 size={22} />}
-            level='subsection'
-            defaultOpen={true}
-            storageKey='prefs-effects'
-          >
-            <Effects />
-          </CollapsibleSection>
         </div>
+      </CollapsibleSection>
+
+      {/* Effects Section */}
+      <CollapsibleSection
+        title='Effects'
+        fullBorder
+        icon={<Wand2 size={28} />}
+        level='section'
+        defaultOpen={true}
+        storageKey='prefs-effects'
+      >
+        <Effects />
       </CollapsibleSection>
 
       {/* Goal Timers section - commented out
