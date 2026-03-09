@@ -189,14 +189,14 @@
     "explanation": "い-adjectives do not take だ in plain present. (Pattern set 2)",
     "id": 24,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "wrong": "先生は私を日本語を教えました。",
     "correct": "先生は私に日本語を教えました。",
     "explanation": "Recipient takes に with 教える. (Pattern set 2)",
     "id": 25,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
