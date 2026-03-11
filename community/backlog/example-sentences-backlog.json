@@ -861,7 +861,7 @@
     "jlpt": "N4",
     "id": 96,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "japanese": "電車が遅れていたので、少し遅刻しました。",
@@ -870,7 +870,7 @@
     "jlpt": "N4",
     "id": 97,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "japanese": "この問題は思ったより難しくなかった。",
@@ -879,7 +879,7 @@
     "jlpt": "N3",
     "id": 98,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "japanese": "彼は日本で働くためにビジネス日本語を学んでいる。",
@@ -887,7 +887,7 @@
     "english": "He studies business Japanese to work in Japan.",
     "jlpt": "N3",
     "id": 99,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
