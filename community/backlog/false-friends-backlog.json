@@ -6,7 +6,7 @@
     "example": "祖母に手紙を書きました。",
     "id": 1,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "マンション (manshon)",
@@ -42,7 +42,7 @@
     "example": "ライブでテンションが上がった。",
     "id": 5,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "バイキング (baikingu)",
@@ -51,7 +51,7 @@
     "example": "ホテルの朝食はバイキングです。",
     "id": 6,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "カンニング (kanningu)",
@@ -60,7 +60,7 @@
     "example": "試験でカンニングしてはいけません。",
     "id": 7,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "リベンジ (ribenji)",
@@ -123,7 +123,7 @@
     "example": "新しい料理にチャレンジしてみる。",
     "id": 14,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "ナンバー (nanbaa)",
@@ -150,7 +150,7 @@
     "example": "会社のイメージが良くなった。",
     "id": 17,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "サラリーマン (sarariman)",
@@ -159,7 +159,7 @@
     "example": "父は都内でサラリーマンをしている。",
     "id": 18,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "ペットボトル (petto botoru)",
@@ -168,7 +168,7 @@
     "example": "ペットボトルは分別して捨てる。",
     "id": 19,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "アニメ (anime)",
@@ -177,7 +177,7 @@
     "example": "子どものころからアニメが好きだ。",
     "id": 20,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "手紙 (tegami)",
@@ -186,7 +186,7 @@
     "example": "祖母に手紙を書きました。",
     "id": 21,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "マンション (manshon)",
@@ -195,7 +195,7 @@
     "example": "駅前のマンションに住んでいます。",
     "id": 22,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "コンセント (konsento)",
@@ -249,7 +249,7 @@
     "example": "去年落ちた試験に今年リベンジする。",
     "id": 28,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "クレーム (kureemu)",
@@ -258,7 +258,7 @@
     "example": "お客様からクレームが届いた。",
     "id": 29,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "ナイーブ (naibu)",
@@ -267,7 +267,7 @@
     "example": "彼は意外とナイーブな性格だ。",
     "id": 30,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "シール (shiiru)",
@@ -284,7 +284,7 @@
     "explanation": "ホッチキス means stapler. (Set 2)",
     "example": "資料をホッチキスで留めてください。",
     "id": 32,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1068,7 +1068,7 @@
     "example": "ペットボトルは分別して捨てる。",
     "id": 119,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "アニメ (anime)",
@@ -1077,6 +1077,6 @@
     "example": "子どものころからアニメが好きだ。",
     "id": 120,
     "issued": false,
-    "completed": false
+    "completed": true
   }
 ]
