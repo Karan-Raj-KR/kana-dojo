@@ -277,7 +277,7 @@
     "anime": "One Piece",
     "character": "Kozuki Sukiyaki",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 29,
@@ -287,7 +287,7 @@
     "anime": "One Piece",
     "character": "Charlotte Linlin (Big Mom)",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 30,
@@ -296,7 +296,7 @@
     "english": "Shishishi!",
     "anime": "One Piece",
     "character": "Monkey D. Luffy",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
