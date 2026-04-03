@@ -230,7 +230,7 @@
     "dont": "ご飯に箸を立てる",
     "note": "立て箸は弔事連想のため避ける。",
     "id": 26,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -239,7 +239,7 @@
     "dont": "参道の中央を歩く",
     "note": "中央は神様の通り道とされる。",
     "id": 27,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -743,7 +743,7 @@
     "dont": "通話を続ける",
     "note": "混雑時は特に配慮する。",
     "id": 83,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -878,7 +878,7 @@
     "dont": "笑いながら浅く頭を下げる",
     "note": "丁寧さは姿勢で伝わる。",
     "id": 98,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1076,7 +1076,7 @@
     "dont": "匂いの強いものを持参する",
     "note": "分けやすさが好まれる。",
     "id": 120,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {

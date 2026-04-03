@@ -676,7 +676,7 @@
     "english": "But... that's what I like. (alt wording 16)",
     "anime": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
     "character": "Yoshikage Kira",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -906,7 +906,7 @@
     "english": "Relax, I'm the strongest. (alt wording 39)",
     "anime": "Jujutsu Kaisen",
     "character": "Satoru Gojo",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1186,7 +1186,7 @@
     "english": "Good grief... honestly. (alt wording 15) (alt wording 67)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1266,7 +1266,7 @@
     "english": "Dance to my beautiful technique! (alt wording 23) (alt wording 75)",
     "anime": "The Prince of Tennis",
     "character": "Keigo Atobe",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1366,7 +1366,7 @@
     "english": "I never give up, believe it! (alt wording 33) (alt wording 85)",
     "anime": "Naruto",
     "character": "Naruto Uzumaki",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {

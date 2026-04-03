@@ -2,7 +2,7 @@
   {
     "id": 1,
     "fact": "Japan has a word 'kuchisabishii' (口寂しい) that literally means 'lonely mouth' - the feeling of eating when you're not hungry, just because your mouth wants something to do.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -128,7 +128,7 @@
   {
     "id": 22,
     "fact": "There's a Japanese word 'komorebi' (木漏れ日) specifically for sunlight filtering through leaves - no direct English translation exists.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1586,7 +1586,7 @@
   {
     "id": 265,
     "fact": "Japan’s 'shimenawa' (注連縄) sacred ropes are hung at shrines and homes to mark purified, protected spaces.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1886,7 +1886,7 @@
   {
     "id": 315,
     "fact": "Japan’s 'omotenashi' culture emphasizes thoughtful hospitality and anticipating guests’ needs.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
