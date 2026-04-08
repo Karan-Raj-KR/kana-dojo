@@ -27,22 +27,17 @@ export default function TopBar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const scrollDifference = Math.abs(currentScrollY - lastScrollY.current);
 
-      // Always show when at top
-      if (currentScrollY < 10) {
+      // Always show when at top of page
+      if (currentScrollY <= 10) {
         setIsVisible(true);
       }
-      // Hide when scrolling down (with minimum scroll distance to avoid jitter)
-      else if (
-        currentScrollY > lastScrollY.current &&
-        currentScrollY > 50 &&
-        scrollDifference > 5
-      ) {
+      // Hide when scrolling down past threshold
+      else if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
         setIsVisible(false);
       }
-      // Show when scrolling up (with minimum scroll distance)
-      else if (currentScrollY < lastScrollY.current && scrollDifference > 5) {
+      // Show when scrolling up
+      else if (currentScrollY < lastScrollY.current) {
         setIsVisible(true);
       }
 
@@ -69,28 +64,6 @@ export default function TopBar() {
     { name: 'Preferences', href: '/preferences', icon: Sparkles },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      // Show/hide based on scroll direction
-      if (currentScrollY < 10) {
-        setIsVisible(true);
-      } else if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        // Scrolling down & past threshold
-        setIsVisible(false);
-      } else if (currentScrollY < lastScrollY.current) {
-        // Scrolling up
-        setIsVisible(true);
-      }
-
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const isActive = (href: string) => {
     if (href === '/kana') {
       return (
@@ -104,9 +77,15 @@ export default function TopBar() {
     <>
       {/* Desktop Top Bar */}
       <motion.nav
-        initial={{ y: 0 }}
-        animate={{ y: isVisible ? 0 : -100 }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        initial={false}
+        animate={{
+          y: isVisible ? 0 : '-100%',
+          opacity: isVisible ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.3,
+          ease: [0.4, 0, 0.2, 1],
+        }}
         className='fixed top-0 right-0 left-0 z-50 border-b-2 border-dashed border-(--border-color) bg-(--background-color) max-lg:hidden'
       >
         <div className='flex h-20 items-center justify-between px-4 md:px-6'>
@@ -173,9 +152,15 @@ export default function TopBar() {
 
       {/* Mobile Bottom Bar */}
       <motion.aside
-        initial={{ y: 0 }}
-        animate={{ y: isVisible ? 0 : 100 }}
-        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        initial={false}
+        animate={{
+          y: isVisible ? 0 : '100%',
+          opacity: isVisible ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.3,
+          ease: [0.4, 0, 0.2, 1],
+        }}
         className='fixed bottom-0 z-50 flex w-full items-center justify-evenly border-t-2 border-(--border-color) bg-(--card-color) py-2 lg:hidden'
       >
         {mobileNavItems.map(item => {
